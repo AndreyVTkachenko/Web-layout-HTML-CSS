@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_example_02.css">
+</head>
+
+<body>
+    <section>
+        <h2>Регистрация на сайте</h2>
+        <!-- 
+        <form action="#">
+            Ваше имя <input autofocus required type="text"><br> Использование автофокуса
+            <button type="submit">Оставить заявку</button>
+        </form>
+         -->
+        <form action="#">
+            Ваше имя <input title="Обязательное поле ввода" required type="text"><br>
+            Email <input type="email"><br>
+            Дата старта разработки <input type="date"><br>
+            Сколько проектов вы хотите чтобы я создал <input min="1" type="number"><br>
+            Какие границы <input type="range"><br>
+            <button type="submit">Оставить заявку</button>
+        </form>
+    </section>
+    <section>
+        <h2>Музыкальный раздел сайта</h2>
+        <audio controls src="audio/Gheorghe Zamfir - Last The Lonely Shepherd.mp3"></audio>
+    </section>
+    <section class="video-box">
+        <h2 class="video-heading">Видеораздел сайта</h2>
+        <video class="video" controls preload="auto" src="video/developer and tester.mp4"></video>
+    </section>
+</body>
+
+</html>
