@@ -1,0 +1,101 @@
+.drive {
+    margin-top: 32px;
+}
+
+.drive:hover .car {
+    margin-left: 1200px;
+}
+
+.car {
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue;
+    margin: 20px;
+    transition: margin 5s;
+}
+
+.car-1 {
+    transition-timing-function: ease;
+}
+
+.car-2 {
+    transition-timing-function: ease-in;
+}
+
+.car-3 {
+    transition-timing-function: ease-out;
+}
+
+.car-4 {
+    transition-timing-function: ease-in-out;
+}
+
+.car-5 {
+    transition-timing-function: linear;
+}
+
+.bord {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bord__item {
+    width: 200px;
+    height: 150px;
+    border: 1px solid green;
+    transition: transform 3s;
+}
+
+.bord__item-1:hover {
+    transform: translate(200px, -30px) scale(1.5);
+}
+
+.bord__item-2:hover {
+    transform: translateY(-30px) scale(1.5);
+}
+
+.bord__item-3:hover {
+    transform: translate(-200px, -30px) scale(1.5);
+}
+
+.turn {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turn__item {
+    position: absolute;
+    width: 250px;
+    height: 86px;
+    background-color: red;
+}
+
+.turn__item-1 {
+    transform: rotate(60deg);
+}
+
+.turn__item-3 {
+    transform: rotate(-60deg);
+}
+
+.trapezoid {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trapezoid__item {
+    position: absolute;
+    width: 250px;
+    height: 86px;
+    background-color: yellow;;
+}
+
+.trapezoid__item-1 {
+    transform: skew(15deg);
+}
