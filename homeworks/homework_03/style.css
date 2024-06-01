@@ -8,7 +8,7 @@
 
 body {
     scroll-behavior: smooth;
-    background: #020A18;
+    background: white;
 }
 
 img {
@@ -21,13 +21,12 @@ h2,
 p,
 a,
 button {
-    color: #fff;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
 
 .container {
-    max-width: 1146px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -55,34 +54,40 @@ button {
 /* .mainContent__leftSide {
 
 } */
-
-.mainContent__leftSide h2 {
-    color: #3A68B8;
-    font-size: 18px;
-    line-height: 160%;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
 .mainContent__leftSide h1 {
-    font-size: 55px;
+    font-size: 60px;
     font-weight: 800;
     line-height: 130%;
     margin-bottom: 40px;
 }
 
 .mainContent__leftSide p {
+    color: darkgrey;
     font-style: 18px;
     line-height: 160%;
-    opacity: 0.7;
     margin-bottom: 50px;
 }
 
-.mainContent__leftSide-btnList button {
+.mainContent__leftSide-btnList button1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
     padding: 15px 30px;
-    border-radius: 5px;
-    background: #3A68B8;
-    font-size: 20px;
+    border-radius: 30px;
+    background: darkorange;
+    border: none;
+    cursor: pointer;
+}
+
+.mainContent__leftSide-btnList button2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: darkgray;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: white;
     border: none;
     cursor: pointer;
 }
@@ -94,8 +99,4 @@ button {
 /* .logos {
 
 } */
-
-
-
-
 
