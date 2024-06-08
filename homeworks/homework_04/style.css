@@ -49,7 +49,7 @@ img {
     width: 533px;
     height: 17px;;
     display: flex;
-    gap: 35px;
+    justify-content: space-between;
     margin-top: 11px;
     margin-bottom: 12px;
 }
@@ -69,10 +69,6 @@ img {
     display: flex;
     margin-bottom: 103px;
 }
-
-/* .mainContent__leftSide {
-    
-} */
 
 .mainContent__leftSide h1 {
     color: black;
