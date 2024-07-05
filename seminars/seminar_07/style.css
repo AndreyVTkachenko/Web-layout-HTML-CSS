@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #020A18;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+p,
+a,
+button {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 39px 0;
+    margin-bottom: 160px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.navigation a {
+    font-size: 16px;
+}
+
+/* .main {
+    
+} */
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 197px;
+}
+
+.mainContent__leftSide {
+    max-width: 604px;
+}
+
+.mainContent__leftSide h2 {
+    color: #3A68B8;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.mainContent__leftSide h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.mainContent__leftSide p {
+    font-style: 18px;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 50px;
+    max-width: 558px;
+}
+
+.mainContent__leftSide-btnList {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.mainContent__leftSide-btnList button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: #3A68B8;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn__play {
+    display: flex;
+    gap: 10px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 197px;
+}
+
+.cardList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px
+}
+
+.card {
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.cardBig {
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 60px;
+}
+
+.card h2 {
+    opacity: 0.7;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 125%;
+}
+
+.card p {
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+@media(min-width: 848px) and (max-width: 1146px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 128px;
+    }
+
+    .mainContent__leftSide h2 {
+        font-size: 16px;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        max-width: 550px;
+    }
+
+    .cardList {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        justify-items: center;
+    }
+
+    .card {
+        max-width: 362px;
+        background-color: #101725;
+    }
+
+    .hiddenCard {
+        display: none;
+    }
+}
+
+@media (max-width: 848px) {
+    .container {
+        max-width: 343px;
+    }
+
+    .header {
+        padding: 23px 0;
+        margin-bottom: 64px;
+    }
+
+    .navigation {
+        gap: 16px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 128px;
+    }
+    .mainContent__leftSide {
+        max-width: 343px;
+        text-align: center;
+    }
+    
+    .mainContent__leftSide h2 {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    
+    .mainContent__leftSide h1 {
+        font-size: 28px;
+        margin-bottom: 64px;
+    }
+    
+    .mainContent__leftSide p {
+        margin-bottom: 39px;
+        max-width: 343px;
+    }
+    
+    .mainContent__leftSide-btnList {
+        gap: 24px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logos {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .cardList {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        justify-items: center;
+        /* max-width: 362px; */
+    }
+
+    .card {
+        max-width: 343px; /* или закомментировать эту строку */
+        background-color: #101725;
+    }
+
+    .hiddenCard {
+        display: none;
+    }
+}
