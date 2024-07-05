@@ -1,0 +1,8 @@
+svg:hover {
+    transform: scale(2);
+    fill: purple;
+}
+
+svg:active {
+    fill: yellow;
+}

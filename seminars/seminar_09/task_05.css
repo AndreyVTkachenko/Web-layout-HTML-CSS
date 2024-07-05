@@ -1,0 +1,40 @@
+body {
+    background-color: aqua;
+}
+
+.content {
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+    
+}
+
+.item {
+    position: absolute;
+    width: 150px;
+    height: 64.5px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    background-color: red;
+}
+
+.item_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+    z-index: 5;
+}
+
+.item_2 {
+    transform: rotate(45deg);
+}
+
+.item_3 {
+    transform: rotate(90deg);
+}
+
+.item_4 {
+    transform: rotate(135deg);
+}

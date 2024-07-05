@@ -1,0 +1,33 @@
+.product {
+    width: 250px;
+    padding: 24px;
+    border: 1px solid #000;
+}
+
+.product__img {
+    background-color: forestgreen;
+    height: 150px;
+    position: relative;
+}
+
+.product__img::after {
+    content: "new";
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.product__img::before {
+    content: "sale";
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: orange;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
