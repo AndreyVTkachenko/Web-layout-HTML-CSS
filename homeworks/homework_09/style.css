@@ -40,8 +40,16 @@ img {
 }
 
 .circle {
-    background: ;
-
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    background: #F16D7F;
+    border-radius: 10px;
 }
 
 button {
@@ -606,37 +614,31 @@ button img {
     color: #222224;
 }
 
-.subscribe-form {
-    width: 356px;
-    height: 49px;
-    border-radius: 25px;
+.subscribe-form form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #E1E1E1;
-    border: 1px solid #000;
+    margin-top: 32px;
 }
 
-.subscribe-form input {
-    width: 170px;
-    height: 36px;
+.subscribe-form form input {
+    width: 256px;
+    height: 49px;
     font-weight: 400;
     font-size: 14px;
     color: #222224;
-    background: #E1E1E1;
+    padding: 7px 22px;
+    border-radius: 25px 0 0 25px;
+    background: #e1e1e1;
     border: none;
 }
 
-
-.subscribe-form button {
-    width: 85px;
+.subscribe-form form button {
+    width: 100px;
     height: 49px;
     font-weight: 400;
     font-size: 14px;
     text-align: center;
     color: #fff;
-    background: #F16D7F;
+    background: #f16d7f;
     border-radius: 0 25px 25px 0;
 }
 
