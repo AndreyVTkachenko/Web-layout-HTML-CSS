@@ -327,7 +327,173 @@ button img {
     border: none;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+.service {
+    width: 1600px;
+    height: 341px;
+    background: #222224;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-item {
+    width: 360px;
+    height: 134px;
+    margin-top: 103px;
+    margin-bottom: 104px;
+    color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.service-item h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 19px;
+}
+
+.service-item h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+.subscribe {
+    position: relative;
+    width: 1600px;
+    height: 448px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 224, 224, 0.7);
+}
+
+.subscribe > * {
+    position: relative;
+    z-index: 2;
+}
+
+.left-subscribe {
+    width: 360px;
+    height: 225px;
+    margin-left: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.left-subscribe p {
+    font-size: 20px;
+}
+
+.right-subscribe {
+    width: 557px;
+    height: 142px;
+    margin-right: 230px;
+}
+
+.sub_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_title h1 {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    text-align: center;
+    color: #222224;
+}
+
+.sub_title h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-form form {
+    display: flex;
+    margin-top: 32px;
+}
+
+.subscribe-form form input {
+    width: 256px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222224;
+    padding: 7px 22px;
+    border-radius: 25px 0 0 25px;
+    background: #e1e1e1;
+    border: none;
+}
+
+.subscribe-form form button {
+    width: 100px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #f16d7f;
+    border-radius: 0 25px 25px 0;
+}
+
+.footer {
+    width: 1600px;
+    height: 79px;
+    background: #222224;
+    ;
+}
+
+.footer-text {
+    font-size: 16px;
+    color: #FBFBFB;
+    margin-left: 235px;
+}
+
+.footer-socialnetwork {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 231px;
+    gap: 7.29px;
+}
+
+.footer-socialnetwork a:hover {
+    background: #F16D7F;
+}
+
+.footer-socialnetwork a:hover svg path {
+    fill: #FFFFFF;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
     .navigation {
         max-width: 768px;
         margin: 0 auto;
@@ -436,6 +602,55 @@ button img {
         margin-top: 48px;
         margin-bottom: 70px;
     }
+
+    .service {
+        width: 768px;
+        height: 610px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .service-item {
+        width: 360px;
+        height: 134px;
+        margin: 0;
+    }
+
+    .subscribe {
+        width: 768px;
+        height: 614px;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .left-subscribe {
+        margin: 0;
+    }
+
+    .right-subscribe {
+        margin: 0;
+    }
+
+    .footer {
+        width: 768px;
+        height: 79px;
+        background: #222224;
+    }
+
+    .footer-text {
+        margin-left: 32px;
+    }
+
+    .footer-socialnetwork {
+        margin-right: 32px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -456,7 +671,8 @@ button img {
     }
 
     .right-links button:nth-child(2),
-    .right-links button:nth-child(3) {
+    .right-links button:nth-child(3),
+    .circle {
         display: none;
     }
 
@@ -529,151 +745,76 @@ button img {
         margin-top: 41px;
         margin-bottom: 85px;
     }
-}
 
-.service {
-    width: 1600px;
-    height: 341px;
-    background: #222224;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
+    .service {
+        width: 320px;
+        height: 610px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+    }
 
-.service-item {
-    width: 360px;
-    height: 134px;
-    margin-top: 103px;
-    margin-bottom: 104px;
-    color: #fbfbfb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    .service-item {
+        width: 360px;
+        height: 128px;
+        margin: 0;
+    }
 
-.service-item img {
-    width: 40px;
-    height: 40px;
-}
+    .subscribe {
+        width: 320px;
+        height: 614px;
+        background-size: cover;
+        background-position: left;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 59px;
+    }
 
-.service-item h1 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 19px;
-    margin-top: 19px;
-}
+    .left-subscribe p {
+        font-size: 18px;
+    }
 
-.service-item h3 {
-    text-align: center;
-    font-weight: 300;
-    font-size: 13px;
-    margin-top: 16px;
-}
+    .left-subscribe {
+        margin: 0;
+    }
 
-.subscribe {
-    width: 1600px;
-    height: 448px;
-    background: rgba(224, 224, 224, 0.70);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .right-subscribe {
+        margin: 0;
+    }
 
-.left-subscribe {
-    width: 360px;
-    height: 225px;
-    margin-left: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
-}
+    .sub_title h3 {
+        font-weight: 400;
+        font-size: 14px;
+    }
 
-.right-subscribe {
-    width: 577px;
-    height: 142px;
-    margin-right: 230px;
-}
+    .subscribe-form form {
+        display: flex;
+        margin-top: 32px;
+    }
 
-.sub_title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .subscribe-form form input {
+        width: 220px;
+    }
 
-.sub_title h1 {
-    font-style: bold;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 167%;
-    text-align: center;
-    color: #222224;
-}
+    .footer {
+        width: 320px;
+        height: 143px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
 
-.sub_title h3 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 167%;
-    text-align: center;
-    color: #222224;
-}
+    .footer-text {
+        padding-bottom: 9px;
+        margin: 0;
+    }
 
-.subscribe-form form {
-    display: flex;
-    margin-top: 32px;
-}
-
-.subscribe-form form input {
-    width: 256px;
-    height: 49px;
-    font-weight: 400;
-    font-size: 14px;
-    color: #222224;
-    padding: 7px 22px;
-    border-radius: 25px 0 0 25px;
-    background: #e1e1e1;
-    border: none;
-}
-
-.subscribe-form form button {
-    width: 100px;
-    height: 49px;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    color: #fff;
-    background: #f16d7f;
-    border-radius: 0 25px 25px 0;
-}
-
-.footer {
-    width: 1600px;
-    height: 79px;
-    background: #222224;
-    ;
-}
-
-.footer-text {
-    font-size: 16px;
-    color: #FBFBFB;
-    margin-left: 235px;
-}
-
-.footer-socialnetwork {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 231px;
-    gap: 7.29px;
-}
-
-.footer-socialnetwork a:hover {
-    background: #F16D7F;
-}
-
-.footer-socialnetwork a:hover svg path{
-    fill: #FFFFFF;
+    .footer-socialnetwork {
+        padding-top: 43px;
+        margin: 0;
+    }
 }
