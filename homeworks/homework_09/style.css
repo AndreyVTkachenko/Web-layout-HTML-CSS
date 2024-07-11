@@ -37,11 +37,17 @@ img {
     align-items: center;
     margin-right: 240px;
     gap: 33px;
+    position: relative;
 }
 
 .circle {
     width: 20px;
     height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -10px;
+    margin-right: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,6 +231,44 @@ button img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.card:hover .guidance {
+    display: flex;
+}
+
+.guidance {
+    display: none;
+    width: 360px;
+    height: 420px;
+    position: absolute;
+    background-color: rgba(58, 56, 56, 0.86);
+    ;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    width: 139px;
+    height: 44px;
+    border: #FFFFFF 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px
+}
+
+.rectangle img {
+    width: 26px;
+    height: 24px;
+}
+
+.rectangle button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
 }
 
 .product-description {
@@ -275,6 +319,12 @@ button img {
     font-weight: 400;
     line-height: 19.2px;
     cursor: pointer;
+}
+
+.browse-button:hover {
+    background-color: #FF6A6A;
+    color: #fff;
+    border: none;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -481,18 +531,6 @@ button img {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .service {
     width: 1600px;
     height: 341px;
@@ -533,24 +571,6 @@ button img {
     margin-top: 16px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .subscribe {
     width: 1600px;
     height: 448px;
@@ -571,18 +591,6 @@ button img {
     text-align: center;
     gap: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .right-subscribe {
     width: 577px;
@@ -642,19 +650,6 @@ button img {
     border-radius: 0 25px 25px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     width: 1600px;
     height: 79px;
@@ -674,4 +669,12 @@ button img {
     justify-content: space-between;
     margin-right: 231px;
     gap: 7.29px;
+}
+
+.footer-socialnetwork a:hover {
+    background-color: #F16D7F;
+}
+
+.footer-socialnetwork a:hover svg path{
+    fill: #FFFFFF;
 }
