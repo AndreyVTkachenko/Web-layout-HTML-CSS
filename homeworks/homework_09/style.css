@@ -39,6 +39,11 @@ img {
     gap: 33px;
 }
 
+.circle {
+    background: ;
+
+}
+
 button {
     background: none;
     border: none;
@@ -463,7 +468,208 @@ button img {
 
     .browse-all {
         text-align: center;
-        margin-top: 42px;
-        margin-bottom: 70px;
+        margin-top: 41px;
+        margin-bottom: 85px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service {
+    width: 1600px;
+    height: 341px;
+    background: #222224;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-item {
+    width: 360px;
+    height: 134px;
+    margin-top: 103px;
+    margin-bottom: 104px;
+    color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.service-item h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 19px;
+}
+
+.service-item h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subscribe {
+    width: 1600px;
+    height: 448px;
+    background: rgba(224, 224, 224, 0.70);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-subscribe {
+    width: 360px;
+    height: 225px;
+    margin-left: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-subscribe {
+    width: 577px;
+    height: 142px;
+    margin-right: 230px;
+}
+
+.sub_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_title h1 {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    text-align: center;
+    color: #222224;
+}
+
+.sub_title h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-form {
+    width: 356px;
+    height: 49px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E1E1E1;
+    border: 1px solid #000;
+}
+
+.subscribe-form input {
+    width: 170px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222224;
+    background: #E1E1E1;
+    border: none;
+}
+
+
+.subscribe-form button {
+    width: 85px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #F16D7F;
+    border-radius: 0 25px 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 1600px;
+    height: 79px;
+    background: #222224;
+    ;
+}
+
+.footer-text {
+    font-family: "Lato", "sans-serif";
+    font-size: 16px;
+    color: #FBFBFB;
+    margin-left: 235px;
+}
+
+.footer-socialnetwork {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 231px;
+    gap: 7.29px;
 }
