@@ -485,12 +485,26 @@ button img {
     gap: 7.29px;
 }
 
+.footer-socialnetwork a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
 .footer-socialnetwork a:hover {
-    background: #F16D7F;
+    background: #f16d7f;
+}
+
+.footer-socialnetwork a svg path {
+    transition: fill 0.1s ease-in-out;
 }
 
 .footer-socialnetwork a:hover svg path {
-    fill: #FFFFFF;
+    fill: #ffffff;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
