@@ -471,8 +471,9 @@ button img {
 }
 
 .footer {
-    width: 1600px;
+    max-width: 1600px;
     height: 79px;
+    margin: 0 auto;
     background: #222224;
 }
 
