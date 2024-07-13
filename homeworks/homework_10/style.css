@@ -799,7 +799,7 @@ button img {
     }
 
     .image-block {
-        width: 343px;
+        width: 320px;
         height: 247px;
     }
 
@@ -862,10 +862,12 @@ button img {
 
     .left-subscribe {
         margin: 0;
+        width: 320px;
     }
 
     .right-subscribe {
         margin: 0;
+        width: 320px;
     }
 
     .sub_title h3 {
